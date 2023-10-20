@@ -884,11 +884,37 @@ namespace QueryDesigner
             {
                 if (string.IsNullOrEmpty(temp.ReportPath))
                 {
+                    //if (grd != null)
+                    //{
+                    //    if (PrintHelper.IsPrintingAvailable)
+                    //    {
+                    //        PrintHelper.Print(grd);
+                    //    }
+                    //    else
+                    //    {
+                    //        MessageBox.Show("打印组件库没有发现！", "信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //    }
+                    //}
+
+                    //官
+                    //if (ComponentPrinter.IsPrintingAvailable(true))
+                    //{
+                    //    ComponentPrinter printer = new ComponentPrinter(this.gridControl1);
+                    //    printer.CreateDocument();
+
+                    //    printer.ShowPreview(this, new DefaultLookAndFeel().LookAndFeel);
+                    //}
+                    //else
+                    //    MessageBox.Show("XtraPrinting Library is not found...");
+
+                    //修改 2023.10.20
                     if (grd != null)
                     {
-                        if (PrintHelper.IsPrintingAvailable)
+                        if (ComponentPrinter.IsPrintingAvailable(true))
                         {
-                            PrintHelper.Print(grd);
+                            ComponentPrinter printer = new ComponentPrinter(grd);
+                            printer.CreateDocument();
+                            printer.Print();
                         }
                         else
                         {
@@ -958,9 +984,11 @@ namespace QueryDesigner
                 {
                     if (grd != null)
                     {
-                        if (PrintHelper.IsPrintingAvailable)
+                        if (ComponentPrinter.IsPrintingAvailable(true))
                         {
-                            PrintHelper.ShowPreview(grd);
+                            ComponentPrinter printer = new ComponentPrinter(grd);
+                            printer.CreateDocument();
+                            printer.Print();
                         }
                         else
                         {
@@ -1063,9 +1091,10 @@ namespace QueryDesigner
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        IExportProvider provider = new ExportXlsProvider(saveFileDialog1.FileName);
-                        BaseExportLink link = grd.MainView.CreateExportLink(provider);
-                        link.ExportTo(true);
+                        //dx2023.10.20: devexpress 18.1 无 ExportXlsProvider
+                        //IExportProvider provider = new ExportXlsProvider(saveFileDialog1.FileName);
+                        //BaseExportLink link = grd.MainView.CreateExportLink(provider);
+                        //link.ExportTo(true);
                     }
                 }
             }

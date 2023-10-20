@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRegister", "FileRegister\FileRegister.csproj", "{5CCAE91D-E7A1-4A00-BF5F-689E26FFE00D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDesigner", "FormsDesigner\FormsDesigner.csproj", "{4A9C0CF2-2601-4C06-9500-F261E7EE9C8D}"
@@ -12,8 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryException", "QueryException\QueryException.csproj", "{773225E5-5A7E-4FB4-900D-4C19D66200AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnControl", "SnControl\SnControl.csproj", "{DB4EF479-E2DC-44FD-9B8A-A421BD57B949}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsUI", "WinFormsUI\WinFormsUI\WinFormsUI.csproj", "{C75532C4-765B-418E-B09B-46D36B2ABDB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryLauncher", "QueryApplication\QueryLauncher.csproj", "{D9D619C5-B03D-4301-A19A-CE8E8556954B}"
 EndProject
@@ -87,16 +87,6 @@ Global
 		{DB4EF479-E2DC-44FD-9B8A-A421BD57B949}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DB4EF479-E2DC-44FD-9B8A-A421BD57B949}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DB4EF479-E2DC-44FD-9B8A-A421BD57B949}.Release|x86.ActiveCfg = Release|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{C75532C4-765B-418E-B09B-46D36B2ABDB1}.Release|x86.ActiveCfg = Release|Any CPU
 		{D9D619C5-B03D-4301-A19A-CE8E8556954B}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{D9D619C5-B03D-4301-A19A-CE8E8556954B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{D9D619C5-B03D-4301-A19A-CE8E8556954B}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -110,5 +100,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BA15158-61FA-4C02-B13A-EAC7303B2B9E}
 	EndGlobalSection
 EndGlobal
